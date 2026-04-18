@@ -20,4 +20,4 @@ A live panel shows all saved sessions with speaker name and topic.
 - DOM manipulation for real-time filtering
 
 ## 🌐 Live Demo
-[Hosted on AWS Amplify](#) ← link coming soon
+[Live Demo on GitHub Pages](https://adissv.github.io/AWS_Student_Community_Day)
