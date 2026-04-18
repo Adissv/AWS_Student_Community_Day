@@ -164,6 +164,17 @@
 
         <section id="speakers" class="speakers-section">
           <h2 class="sub-heading">Speakers</h2>
+
+<!-- TASK C: Smart Search -->
+<div class="search-container">
+  <input type="text" id="speakerSearch" placeholder="🔍 Search by name, topic, or role..." />
+</div>
+
+<!-- TASK A: My Schedule Panel -->
+<div id="schedule-panel">
+  <h3>⭐ My Schedule (<span id="saved-count">0</span> saved)</h3>
+  <div id="saved-list"><p style="color:#aaa;">No sessions saved yet.</p></div>
+</div>
           <div class="speakers-container">
             <div class="speaker-card">
               <div>
@@ -186,6 +197,7 @@
                 <p>Head of Academic Advocacy at AWS</p>
                 <h5>Topic:</h5>
                 <p>Two Journeys, One Cloud: Career Pathways</p>
+                <button class="bookmark-btn" data-name="Jen Looper" data-topic="Two Journeys, One Cloud: Career Pathways" data-role="Head of Academic Advocacy at AWS" onclick="toggleBookmark(this)">☆ Save to My Schedule</button>
               </div>
             </div>
             <div class="speaker-card">
@@ -209,6 +221,7 @@
                 <p>Senior Digital Marketing Manager at AWS</p>
                 <h5>Topic:</h5>
                 <p>Two Journeys, One Cloud: Career Pathways</p>
+                <button class="bookmark-btn" data-name="Aditi Sawhney" data-topic="Two Journeys, One Cloud: Career Pathways" data-role="Senior Digital Marketing Manager at AWS" onclick="toggleBookmark(this)">☆ Save to My Schedule</button>
               </div>
             </div>
             <div class="speaker-card">
@@ -236,6 +249,7 @@
                 <p>
                   Empowering Future Innovators: Crafting CI/CD pipeline with AWS
                 </p>
+                <button class="bookmark-btn" data-name="Dipali" data-topic="Empowering Future Innovators: CI/CD pipeline with AWS" data-role="VP of Data Engineering at Natwest Group" onclick="toggleBookmark(this)">☆ Save to My Schedule</button>
               </div>
             </div>
             <div class="speaker-card">
@@ -259,6 +273,7 @@
                 <p>Senior Cloud Ops Engineer at Accenture</p>
                 <h5>Topic:</h5>
                 <p>Unlocking and Mastering the Cloud Basics</p>
+                <button class="bookmark-btn" data-name="Varsha Verma" data-topic="Unlocking and Mastering the Cloud Basics" data-role="Senior Cloud Ops Engineer at Accenture" onclick="toggleBookmark(this)">☆ Save to My Schedule</button>
               </div>
             </div>
             <div class="speaker-card">
@@ -284,6 +299,7 @@
                 </p>
                 <h5>Topic:</h5>
                 <p>Generative AI - Asking for a friend</p>
+                <button class="bookmark-btn" data-name="Kristine Howard" data-topic="Generative AI - Asking for a friend" data-role="AWS Developer Relations and Advocacy" onclick="toggleBookmark(this)">☆ Save to My Schedule</button>
               </div>
             </div>
 
@@ -311,6 +327,7 @@
                 <p>Consultant at Capgemini and AWS Community Builder</p>
                 <h5>Topic:</h5>
                 <p>AWS Security with Identity and Access Management</p>
+                <button class="bookmark-btn" data-name="Gargee Bhatnagar" data-topic="AWS Security with Identity and Access Management" data-role="Consultant at Capgemini and AWS Community Builder" onclick="toggleBookmark(this)">☆ Save to My Schedule</button>
               </div>
             </div>
             <div class="speaker-card">
@@ -334,6 +351,7 @@
                 <p>Principal Marketing Manager, AWS</p>
                 <h5>Topic:</h5>
                 <p>Making the right moves in a professional landscape</p>
+                <button class="bookmark-btn" data-name="Rashmi Nambiar" data-topic="Making the right moves in a professional landscape" data-role="Principal Marketing Manager, AWS" onclick="toggleBookmark(this)">☆ Save to My Schedule</button>
               </div>
             </div>
             <div class="speaker-card">
@@ -357,6 +375,7 @@
                 <p>Cloud Engineer at Dremio</p>
                 <h5>Topic:</h5>
                 <p>Re-Invent recap</p>
+                <button class="bookmark-btn" data-name="Payal Gupta" data-topic="Re-Invent recap" data-role="Cloud Engineer at Dremio" onclick="toggleBookmark(this)">☆ Save to My Schedule</button>
               </div>
             </div>
             <div class="speaker-card">
@@ -380,6 +399,7 @@
                 <p>AWS Community Builder</p>
                 <h5>Topic:</h5>
                 <p>Climbing the Cloud Ladder: Your AWS Career Guide</p>
+                <button class="bookmark-btn" data-name="Rajani" data-topic="Climbing the Cloud Ladder: Your AWS Career Guide" data-role="AWS Community Builder" onclick="toggleBookmark(this)">☆ Save to My Schedule</button>
               </div>
             </div>
           </div>
@@ -1023,6 +1043,7 @@
       </div>
     </div>
     <script src="countdown.js"></script>
+    <script src="search.js"></script>
     <script src="./preloader.js"></script>
     <script src="./spearker_card.js"></script>
 

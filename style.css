@@ -902,3 +902,82 @@ iframe {
     padding: 0 0px;
   }
 }
+/* ======= TASK C: Search Bar ======= */
+.search-container {
+  text-align: center;
+  margin: 20px auto 30px;
+}
+
+#speakerSearch {
+  width: 50%;
+  padding: 12px 24px;
+  border: 2px solid #FF9900;
+  border-radius: 30px;
+  font-size: 16px;
+  background: #1a1a1a;
+  color: white;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+#speakerSearch:focus {
+  box-shadow: 0 0 12px rgba(255, 153, 0, 0.6);
+}
+
+/* ======= TASK A: My Schedule Panel ======= */
+#schedule-panel {
+  background: #1a1a1a;
+  border: 2px solid #FF9900;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  color: white;
+}
+
+#schedule-panel h3 {
+  color: #FF9900;
+  margin-bottom: 12px;
+}
+
+.saved-item {
+  background: #2a2a2a;
+  border-left: 4px solid #FF9900;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+
+.saved-item strong {
+  display: block;
+  color: #FF9900;
+}
+
+.saved-item span {
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* ======= Bookmark Button ======= */
+.bookmark-btn {
+  margin-top: 10px;
+  background: transparent;
+  border: 2px solid #FF9900;
+  color: #FF9900;
+  padding: 7px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+
+.bookmark-btn:hover {
+  background: #FF9900;
+  color: #000;
+}
+
+.bookmark-btn.bookmarked {
+  background: #FF9900;
+  color: #000;
+  font-weight: bold;
+}
