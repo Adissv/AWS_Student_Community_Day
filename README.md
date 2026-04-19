@@ -16,9 +16,11 @@ speaker cards instantly as the user types.
 - Cards that don't match are hidden with `display:none`
 
 ## 🐛 Bugs Found & Fixed
-- `perLoader.css` filename mismatch — fixed spelling
-- `spearker_card.js` missing file reference — removed broken link
-- `preloader.js` case sensitivity issue — fixed to `preLoader.js`
+
+- `perLoader.css` filename had wrong spelling — 
+   fixed to `preLoader.css`
+- `preloader.js` case sensitivity — 
+   fixed to `preLoader.js`
 
 ## 🌐 Live Demo
 [Live Site](https://adissv.github.io/AWS_Student_Community_Day)
