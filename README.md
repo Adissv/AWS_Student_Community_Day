@@ -2,22 +2,26 @@
 
 Forked from [vidhiisaxena/AWS_Student_Community_Day](https://github.com/vidhiisaxena/AWS_Student_Community_Day)
 
-## ✅ Tasks Implemented
+## ✅ Task Implemented: Task C — Smart Search (Real-time Filtering)
 
-### Task C: Smart Search (Real-time Filtering)
-A search bar above the Speakers section filters cards instantly as the user types.
-Matches against speaker **name**, **topic**, and **role** using JavaScript's
-`array filter` logic via `querySelectorAll` + `forEach`.
+### What it does:
+A search bar above the Speakers section filters 
+speaker cards instantly as the user types.
 
-### Task A: My Schedule (localStorage Bookmarks)
-Each speaker card has a **"Save to My Schedule"** button.
-Saved sessions persist across page refreshes using `localStorage`.
-A live panel shows all saved sessions with speaker name and topic.
+### Logic:
+- Used `addEventListener('input')` to detect keystrokes
+- Used `querySelectorAll('.speaker-card')` to get all cards
+- Used `forEach` to loop through each card
+- Matched query against speaker **name**, **topic**, and **role**
+- Cards that don't match are hidden with `display:none`
 
-## 🛠 Tech Used
-- HTML, CSS, Vanilla JavaScript
-- localStorage API for persistence
-- DOM manipulation for real-time filtering
+## 🐛 Bugs Found & Fixed
+- `perLoader.css` filename mismatch — fixed spelling
+- `spearker_card.js` missing file reference — removed broken link
+- `preloader.js` case sensitivity issue — fixed to `preLoader.js`
 
 ## 🌐 Live Demo
-[Live Demo on GitHub Pages](https://adissv.github.io/AWS_Student_Community_Day)
+[Live Site](https://adissv.github.io/AWS_Student_Community_Day)
+
+## 🔗 Repository
+[GitHub Repo](https://github.com/Adissv/AWS_Student_Community_Day)
